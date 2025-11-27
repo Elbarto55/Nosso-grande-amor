@@ -1,0 +1,17 @@
+/* VIDEO DE FUNDO */
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;     /* deixa o vídeo igual a background-size: cover */
+    z-index: -1;           /* coloca atrás de tudo */
+    pointer-events: none;  /* não atrapalha clicar no site */
+}
+
+/* Garante que o resto do site fique acima */
+body * {
+    position: relative;
+    z-index: 1;
+}
